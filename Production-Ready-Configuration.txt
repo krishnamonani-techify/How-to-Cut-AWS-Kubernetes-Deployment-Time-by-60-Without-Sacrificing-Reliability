@@ -1,0 +1,5 @@
+strategy:
+  type: RollingUpdate
+  rollingUpdate:
+    maxSurge: 25%        # 25% of 20 replicas
+    maxUnavailable: 25%
