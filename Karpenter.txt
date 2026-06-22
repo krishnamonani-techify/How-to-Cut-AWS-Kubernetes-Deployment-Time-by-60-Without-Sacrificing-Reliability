@@ -1,0 +1,7 @@
+spec:
+  requirements:
+    - key: karpenter.sh/capacity-type
+      values: ["spot", "on-demand"]
+    - key: node.kubernetes.io/instance-type
+      values: ["m5.large", "m5.xlarge", "m5.2xlarge"]
+  ttlSecondsAfterEmpty: 30
