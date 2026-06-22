@@ -1,0 +1,5 @@
+# Deploy via ArgoCD sync (triggered automatically on git push)
+argocd app sync api-service --prune
+
+# Instant rollback to previous revision
+argocd app rollback api-service 42
